@@ -1,0 +1,564 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=DM+Sans:wght@400;700&family=Epilogue:wght@500;700&family=Fraunces:opsz,wght@9..144,700;9..144,900&family=Libre+Franklin:wght@300;600;700&family=Montserrat:wght@500;700&family=Overpass:wght@300;600&family=Poppins:wght@400;500;600;700&family=Rubik:wght@300;400;500&family=Space+Mono:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=DM+Sans:wght@400;700&family=Epilogue:wght@500;700&family=Fraunces:opsz,wght@9..144,700;9..144,900&family=Libre+Franklin:wght@300;600;700&family=Montserrat:wght@500;700&family=Overpass:wght@300;600&family=Poppins:wght@400;500;600;700&family=Rubik:wght@300;400;500&family=Space+Mono:wght@700&family=Ubuntu:wght@400;500;700&display=swap');
+
+$LightredCTAtext: hsl(356, 100%, 66%);
+$VerylightredCTAhoverbackground: hsl(355, 100%, 74%);
+$Verydarkblueheadings: hsl(208, 49%, 24%);
+
+$Grayishbluefootertext: hsl(240, 2%, 79%);
+$Verydarkgrayishbluebodycopy: hsl(207, 13%, 34%);
+$Verydarkblackbluefooterbackground: hsl(240, 10%, 16%);
+
+//Background gradient - Intro/CTA mobile nav
+$Verylightred: hsl(13, 100%, 72%);
+$Lightred: hsl(353, 100%, 62%);
+
+// Background gradient - body
+$Verydarkgrayblue: hsl(237, 17%, 21%);
+$Verydarkdesaturatedblue: hsl(237, 23%, 32%);
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+@media only screen and (max-width: 375px) {
+
+    body {
+        font-size: 29px;
+        font-family: 'Barlow', sans-serif;
+        font-family: 'DM Sans', sans-serif;
+        font-family: 'Epilogue', sans-serif;
+        font-family: 'Fraunces', serif;
+        font-family: 'Libre Franklin', sans-serif;
+        font-family: 'Montserrat', sans-serif;
+        font-family: 'Overpass', sans-serif;
+        font-family: 'Poppins', sans-serif;
+        font-family: 'Rubik', sans-serif; 
+        // font-family: 'Space Mono', monospace;
+    }
+
+    .desktop-editor{
+        display: none;
+    }
+
+    .desktop-lap {
+        display: none;
+    }
+
+    .fa {
+        color: antiquewhite;
+        position: absolute;
+        left: 450px;
+        top: 70px;
+    }
+
+    .header {
+        // background-image:linear-gradient(to bottom, rgb(255, 143, 112 ), rgb(255, 61, 84));
+        background-image:linear-gradient(to bottom, $Verylightred, $Lightred ),url('images/bg-pattern-intro-mobile.svg');
+        // background-image: linear-gradient(to bottom, $Verylightred(), $Lightred);
+        // background:url(/images/bg-pattern-intro-mobile.svg);
+        // background-position: -100px 0px;
+        // background-size: 1000px;
+        // background-repeat: no-repeat;
+        width: 552px;
+        border-radius: 0 0 0 150px;
+        padding: 70px 50px;
+        margin-bottom: 200px;
+    }
+
+    .header-content {
+        text-align: center;
+    }
+
+    .header-content h1 {
+        color: whitesmoke;
+        font-weight: 500;
+        font-size: 50px;
+        margin: 140px 10px 20px 10px;
+        font-family: 'Barlow', sans-serif;
+
+    }
+
+    .header-content p {
+        color: rgb(227, 200, 200);
+        font-size: 26px;
+        margin-bottom: 60px;
+    }
+
+    .header-content div {
+        display: flex;
+        margin-bottom: 150px;
+        justify-content: space-around;
+    }
+
+    .start {
+        background-color: #fff;
+        color: $Lightred;
+        padding: 17px 30px ;
+        border-radius: 100px;
+        font-size: 23px;
+        font-weight: 500;
+        font-family: 'Rubik', sans-serif;
+    }
+
+    .learn {
+        background-color: $Lightred;
+        color: white;
+        border: 2px solid rgb(184, 177, 177);
+        padding: 17px 30px ;
+        border-radius: 100px;
+        font-size: 23px; 
+        font-family: 'Rubik', sans-serif;
+        font-weight: 500;
+    }
+
+    .margin-top {
+        border-radius: 10px 10px 0 0;
+    }
+
+    .margin-bottom {
+        border-radius: 0 0 10px 10px;
+    }
+
+    .product , .company {
+        margin-bottom: 20px;
+    }
+
+    .product-list small , .company-list small {
+        margin: 0 40px -01px 40px;
+        
+    }
+
+    .connect {
+        border-bottom: 1px solid rgb(219, 213, 213);
+        margin: 0 0px;
+        padding-bottom: 40px;
+    }
+
+    
+
+    .click-list {
+        position: absolute;
+        left: 40px;
+        top: 170px;
+        border-radius: 13px;
+        background-color: #fff;
+        text-align: center;
+        width: 475px;
+        line-height: 65px;
+    }
+
+    .flex {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .flex img {
+        width: 17px;
+        margin-left: 10px;
+    }
+
+    .img-desktop {
+        display: none;
+    }
+
+    // .list {
+    //     display: flex;
+    //     flex-direction: column;
+    // }
+
+    .list {
+        color: $Verydarkgrayishbluebodycopy;
+        font-weight: 500;
+        font-size: 23px;
+        line-height: 75px;
+        margin: 0 40px 0 40px;
+        background-color: rgb(242, 242, 242);
+    }
+    
+    .click-list p {
+        color: $Verydarkblueheadings;
+        font-size: 25px;
+        font-weight: 500;
+        // margin-right: 10px;
+    }
+
+    .login {
+        margin: 20px 0 20px 0;
+    }
+
+    .signup {
+        background-image: linear-gradient(to right, $Verylightred, $Lightred);
+        padding: 20px 55px;
+        border-radius: 100px;
+        border: 1px solid white;
+        margin-bottom: 50px;
+    }
+
+    .signup p {
+        color: #fff;
+        font-weight: 900;
+    }
+
+    .main {
+        text-align: center;
+        width: 552px;
+    }
+    
+    .main h2 {
+        color: $Verydarkdesaturatedblue;
+        font-weight: 500;
+        font-size: 40px;
+        padding: 0 50px;
+    }
+
+    .main p {
+        font-size: 25px;
+        line-height: 40px;
+        padding: 38px;
+        color: $Verydarkdesaturatedblue;
+    }
+
+    .text h2 {
+        margin: 50px 0;
+    }
+
+    .introduce {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .mobile-editor {
+        width: 550px;
+        margin: 75px 0 55px 0;
+    }
+
+    .state {
+        background-color: $Verydarkgrayblue;
+        background-image: url(/images/bg-pattern-circles.svg);
+        background-position: -160px -350px;
+        background-size: 900px;
+        background-repeat: no-repeat;
+        border-radius: 0 150px 0 150px;
+        color: #fff;
+        padding: 345px 0 150px 0;
+        line-height: 70px;
+        margin-top: 330px;
+    }
+
+    .phone {
+        position: absolute;
+        top: 2850px;
+    }
+
+    .state h1 {
+        font-weight: normal;
+    }
+
+    .state p {
+        line-height: 50px;
+        color: rgb(214, 214, 214);
+    }
+
+    .mobile-lap {
+        width: 550px;
+        margin: 90px 0 55px 0;
+    }
+
+    .footer {
+        text-align: center;
+        width: 552px;
+        background-color: $Verydarkblackbluefooterbackground;
+        border-radius: 0 150px 0 0;
+        margin-top: 100px;
+        padding: 100px 0 100px 0;
+    }
+
+    .logo-bottom {
+        margin-bottom: 100px;
+    }
+
+    .footer h5 {
+        color: #fff;
+        margin-bottom: 40px;
+    }
+
+    .footer p {
+        color: rgb(185, 185, 185);
+        font-size: 26px;
+        line-height: 50px;
+    }
+
+    .product-bottom {
+        margin-bottom: 50px;
+    }
+
+    .company-bottom {
+        margin-bottom: 50px;
+    }
+
+    .connect-bottom {
+        margin-bottom: 50px;
+    }
+
+    #product {
+        display: none;
+    }
+
+    #company {
+        display: none;
+    }
+
+    #connect {
+        display: none;
+    }
+
+    #click-list {
+       display: none;
+    }
+}
+
+
+@media only screen and (min-width: 1440px) {
+
+    body {
+        font-size: 20px;
+    }
+
+    .container {
+        width: 1440px;
+    }
+
+    .fa {
+        visibility: hidden;
+        position: absolute;
+    }
+
+    .mobile-editor {
+        display: none;
+    }
+
+    .mobile-lap {
+        display: none;
+    }
+
+    .header {
+        background-image:linear-gradient(to right, $Verylightred, $Lightred ),url('images/bg-pattern-intro-mobile.svg');
+        border-radius: 0 0 0 100px;
+    }
+    
+    .top {
+        display: flex;
+        padding: 60px 140px 100px 140px;
+    }
+
+    .flex p {
+        color: rgb(228, 228, 228);
+        font-weight: 600;
+    }
+
+    .flex img {
+        margin-left: 15px;
+    }
+
+    .img-mobile  {
+        display: none;
+    }
+
+    .flex {
+        display: flex;
+        margin-bottom: 20px;
+        align-items: center;
+    }
+
+    .click-list {
+        display: flex;
+    }
+
+    .product , .company , .connect {
+        margin: 10px 0 0 50px;
+    }
+
+    .list {
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(242, 242, 242);
+        position: absolute;
+        padding: 20px 15px;
+        width: 130px;
+        border-radius: 7px;
+        line-height: 30px;
+        font-family: 'Rubik', sans-serif;
+        font-size: 17px;
+        font-weight: 440;
+        color: rgb(103, 102, 102);
+        display: none;
+    }
+
+    .connect-list {
+        margin-left: -10px;
+    }
+
+    .list small:hover {
+        color: black;
+        font-weight: 500;
+    }
+
+    .login {
+        margin: 10px 0 0 400px;
+        color: rgb(228, 228, 228);
+        font-weight: 600;
+    }
+
+    .signup {
+        color: $Lightred;
+        font-weight: 600;
+        border: 1px solid $Lightred;
+        border-radius: 100px;
+        padding: 14px 36px;
+        margin-left: 30px;
+    }
+
+    .header-content {
+        text-align: center;
+        margin-top: 10px;
+        color: #fff;
+    }
+
+    .header-content h1{
+        margin-bottom: 25px;
+        font-size: 60px;
+        font-family: 'Barlow', sans-serif;
+    }
+
+    .header-content p{
+        font-size: 22px;
+        margin-bottom: 45px;
+    }
+
+    .start {
+        padding: 15px 20px;
+        color: $Lightred;
+        font-weight: 700;
+        border-radius: 100px;
+        border: none;
+    }
+
+    .learn {
+        border: 1px solid white;
+        background-color: $LightredCTAtext;
+        padding: 15px 22px;
+        color: #fff;
+        margin-left: 15px;
+        font-weight: 600;
+        border-radius: 100px;
+        margin-bottom: 130px;
+    }
+    
+    .design {
+        text-align: center;
+        margin-top: 150px;
+        color: $Verydarkdesaturatedblue;
+    }
+
+    .introduce {
+        display: flex;
+        width: 1440px;
+        overflow: hidden;
+        justify-content: space-between;
+    }
+
+    .introduce-text {
+        margin: 200px 0 100px 0;
+        padding: 0 105px;
+    }
+
+    .text h2 {
+        margin: 0 0 30px 0;
+        color: $Verydarkdesaturatedblue;
+    }
+
+    .text p {
+        line-height: 35px;
+        color: $Verydarkdesaturatedblue;
+    }
+
+    .tt {
+        margin-bottom: 40px;
+    }
+    
+    .desktop-editor img{
+        width: 80%;
+        height: auto;
+       // margin: 00px -270px 0 0;
+    }
+
+    .desktop-editor {
+        margin: 0px -270px 0 0;
+    }
+
+    .state-text {
+        background-color: $Verydarkgrayblue;
+        background-image: url(/images/bg-pattern-circles.svg);
+        background-position: -210px -500px;
+        background-size: 1000px;
+        padding: 70px 0 0 740px;
+        background-repeat: no-repeat;
+        height: 390px;
+        border-radius: 0 100px 0 100px;
+        margin-bottom: 100px;
+    }
+
+    .state-text h1 {
+        margin-bottom: 23px;
+        color: rgb(218, 218, 218);
+        font-family: 'Barlow', sans-serif;
+    }
+
+    .state-text p {
+        color: rgb(218, 218, 218);
+        padding-right: 120px ;
+    }
+
+    .phone {
+        margin: 00px 0 -520px 120px;
+    }
+
+    .free {
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .desktop-lap {
+        margin: 0 0 0 -300px;
+    }
+
+    .free-text {
+        padding-right: 200px;
+    }
+
+    .footer {
+        display: flex;
+        padding: 60px 150px 60px 0;
+        justify-content: space-evenly;
+        font-family: 'Barlow', sans-serif;
+        background-color: $Verydarkblackbluefooterbackground;
+    }
+
+    .footer h5 {
+        color: #fff;
+        margin-bottom: 25px;
+    }
+
+    .footer p {
+        color: rgb(192, 192, 192);
+        font-size: 17px;
+        line-height: 30px;
+    }
+}

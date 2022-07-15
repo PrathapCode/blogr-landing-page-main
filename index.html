@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | [Blogr]</title>
+
+  <link rel="stylesheet" href="/style.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+</head>
+<body>
+
+  <div class="container">
+
+    <i onclick="bar()" id="bar" class="fa fa-bars" style="font-size:36px"></i>
+    
+    <header class="header">
+
+      <div class="empty"></div>
+
+      <div class="top">
+
+        <div class="logo">
+          <img src="/images/logo.svg" alt="">
+        </div>
+
+        <div id="click-list" class="click-list">
+
+          <div onclick="product()" class="product product-list">
+            
+            <div class="flex">
+              <p>Product</p>
+              <img class="img-mobile" src="/images/icon-arrow-dark.svg" alt="">
+              <img class="img-desktop" src="/images/icon-arrow-light.svg" alt="">
+            </div>
+
+            <div id="product" class="list">
+              <small class="margin-top">Overview</small> <br>
+              <small>Pricing</small> <br>
+              <small>Marketplace</small> <br>
+              <small>Features</small> <br>
+              <small class="margin-bottom">Integrations</small> <br>
+            </div>
+
+          </div>
+
+          <div onclick="company()" class="company">
+
+            <div class="flex">
+              <p>Company</p>
+              <img class="img-mobile" src="/images/icon-arrow-dark.svg" alt="">
+              <img class="img-desktop" src="/images/icon-arrow-light.svg" alt="">
+            </div>
+
+            <div id="company" class="list company-list">
+              <small class="margin-top">About</small> <br>
+              <small>Team</small> <br>
+              <small>Blog</small> <br>
+              <small class="margin-bottom">Careers</small> <br>
+            </div>
+
+          </div>
+
+          <div onclick="connect()" class="connect">
+
+            <div class="flex">
+              <p>Connect</p>
+              <img class="img-mobile" src="/images/icon-arrow-dark.svg" alt="">
+              <img class="img-desktop" src="/images/icon-arrow-light.svg" alt="">
+            </div>
+
+            <div id="connect" class="list connect-list">
+              <small class="margin-top">Contact</small> <br>
+              <small>Newsletter</small> <br>
+              <small class="margin-bottom">LinkedIn</small> <br>
+            </div>
+
+          </div>
+
+          <div class="login">
+            <p>Login</p>
+          </div>
+
+          <button class="signup">
+            <p>Sign Up</p>
+          </button>
+    
+        </div>
+
+      </div>
+
+      <div class="header-content">
+
+        <h1>A modern publishing platform</h1>
+        <p>Grow your audience and build your online brand</p>
+
+        <div>
+          <button class="start">Start for Free</button>
+          <button class="learn">Learn More</button>
+        </div>
+
+      </div>
+
+    </header>
+
+    <main class="main">
+
+      <h2 class="design">Designed for the future</h2>
+
+      <div class="introduce">
+
+        <div class="text introduce-text">
+
+          <h2>Introducing an extensible editor</h2>
+          <p class="tt" >Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. 
+            The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, 
+            videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or 
+            change the looks of a blog.</p>
+
+            <h2>Robust content management</h2>
+            <p>Flexible content management enables users to easily move through posts. Increase the usability of your blog 
+              by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.</p>
+        </div>
+
+        <div class="image editor">
+          <img class="mobile-editor" src="/images/illustration-editor-mobile.svg" alt="">
+          <img class="desktop-editor" src="/images/illustration-editor-desktop.svg" alt="">
+        </div>
+
+      </div>
+
+      <div class="state">
+
+        <div class="image phone">
+          <img src="/images/illustration-phones.svg" alt="">
+        </div>
+
+        <div class="text state-text">
+          <h1>State of the Art Infrastructure</h1>
+          <p>With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. 
+            This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.</p>
+        </div>
+
+      </div>
+
+      <div class="free">
+
+        <div class="image">
+          <img class="mobile-lap" src="/images/illustration-laptop-mobile.svg" alt="">
+          <img class="desktop-lap" src="/images/illustration-laptop-desktop.svg" alt="">
+        </div>
+
+        <div class="text free-text">
+
+          <h2>Free, open, simple</h2>
+          <p class="tt" >Blogr is a free and open source application backed by a large community of helpful developers. It supports 
+            features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, 
+            and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.</p>
+
+          <h2>Powerful tooling</h2>
+          <p>Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but
+            capable of producing even the most complicated sites.</p>
+
+        </div>
+
+      </div>
+
+    </main>
+
+    <footer class="footer">
+      
+      <div class="logo-bottom">
+        <img src="/images/logo.svg" alt="">
+      </div>
+
+      <div class="product-bottom">
+        <h5>Product</h5>
+        <p>Overview</p>
+        <p>Pricing</p>
+        <p>Marketplace</p>
+        <p>Features</p>
+        <p>Integrations</p>
+      </div>
+
+      <div class="company-bottom">
+        <h5>Company</h5>
+        <p>About</p>
+        <p>Team</p>
+        <p>Blog</p>
+        <p>Careers</p>
+      </div>
+
+      <div class="connect-bottom">
+        <h5>Connect</h5>
+        <p>Contact</p>
+        <p>Newsletter</p>
+        <p>LinkedIn</p>
+      </div>
+
+    </footer>
+
+  </div>
+
+  <script src="/script.js"></script>
+
+</body>
+</html>
+
+
